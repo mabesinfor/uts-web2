@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteBase /6-sekolah-pdo/
+
+# Redirect ke index.php jika URL kosong
+RewriteRule ^$ index.php [L]
+
+# Rewrite URL untuk siswa, guru, dan nilai
+RewriteRule ^siswa/?$ siswa/index.php [L]
+RewriteRule ^siswa/create/?$ siswa/create.php [L]
+RewriteRule ^siswa/read/([0-9]+)/?$ siswa/read.php?id=$1 [L]
+RewriteRule ^siswa/update/([0-9]+)/?$ siswa/update.php?id=$1 [L]
+RewriteRule ^siswa/delete/([0-9]+)/?$ siswa/delete.php?id=$1 [L]
+
+RewriteRule ^guru/?$ guru/index.php [L]
+RewriteRule ^guru/create/?$ guru/create.php [L]
+RewriteRule ^guru/read/([0-9]+)/?$ guru/read.php?id=$1 [L]
+RewriteRule ^guru/update/([0-9]+)/?$ guru/update.php?id=$1 [L]
+RewriteRule ^guru/delete/([0-9]+)/?$ guru/delete.php?id=$1 [L]
+
+RewriteRule ^nilai/?$ nilai/index.php [L]
+RewriteRule ^nilai/create/?$ nilai/create.php [L]
+RewriteRule ^nilai/read/([0-9]+)/?$ nilai/read.php?id=$1 [L]
+RewriteRule ^nilai/update/([0-9]+)/?$ nilai/update.php?id=$1 [L]
+RewriteRule ^nilai/delete/([0-9]+)/?$ nilai/delete.php?id=$1 [L]
