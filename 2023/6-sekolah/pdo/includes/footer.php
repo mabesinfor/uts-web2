@@ -13,7 +13,7 @@
     <script src="../assets/js/scripts.js"></script>
     <!-- Footer -->
     <footer>
-        &copy; 2024 Joko Anwar, H1D022999. UTS PEMROGRAMAN WEB 2
+        &copy; 2023 Sistem Manajemen Sekolah, Dibuat dengan PDO. Joko Anwar H1D022999 UTS Pemrograman Web 2.
     </footer>
 </body>
 </html>
