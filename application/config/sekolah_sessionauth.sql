@@ -1,6 +1,6 @@
 -- Membuat database
-CREATE DATABASE IF NOT EXISTS sekolah;
-USE sekolah;
+CREATE DATABASE IF NOT EXISTS sekolah_sessionauth;
+USE sekolah_sessionauth;
 
 -- Membuat tabel siswa
 CREATE TABLE IF NOT EXISTS siswa (
@@ -27,6 +27,16 @@ CREATE TABLE IF NOT EXISTS penilaian (
     nilai INT NOT NULL,
     FOREIGN KEY (siswa_id) REFERENCES siswa(id),
     FOREIGN KEY (guru_id) REFERENCES guru(id)
+);
+
+-- Membuat tabel users
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    nama VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Mengisi data awal untuk tabel siswa

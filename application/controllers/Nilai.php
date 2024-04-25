@@ -9,6 +9,9 @@ class Nilai extends CI_Controller {
         $this->load->model('Nilai_model');
         $this->load->model('Siswa_model');
         $this->load->model('Guru_model');
+        if (!$this->session->userdata('logged_in')) {
+            redirect('auth');
+        }
     }
 
     public function index()

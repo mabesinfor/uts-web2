@@ -12,7 +12,7 @@
     <script src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
     <!-- Footer -->
     <footer>
-        &copy; 2023 Sistem Manajemen Sekolah, Dibuat dengan Code Igniter 3. Joko Anwar H1D022999 UTS Pemrograman Web 2.
+        &copy; 2024 Joko Anwar, H1D022999. UTS PEMROGRAMAN WEB 2
     </footer>
 </body>
 </html>

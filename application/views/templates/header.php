@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('siswa'); ?>">Siswa</a>
                     </li>
@@ -31,6 +31,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('nilai'); ?>">Nilai</a>
                     </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <?php if ($this->session->userdata('logged_in')): ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url('auth/logout'); ?>">Logout</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>

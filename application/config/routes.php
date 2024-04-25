@@ -5,6 +5,12 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['auth'] = 'auth';
+$route['auth/register'] = 'auth/register';
+$route['auth/register_user'] = 'auth/register_user';
+$route['auth/login_user'] = 'auth/login_user';
+$route['auth/logout'] = 'auth/logout';
+
 $route['siswa'] = 'siswa';
 $route['siswa/create'] = 'siswa/create';
 $route['siswa/read/(:num)'] = 'siswa/read/$1';
